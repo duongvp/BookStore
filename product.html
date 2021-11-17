@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách Trí Đức</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.css" integrity="sha512-QmxybGIvkSI8+CGxkt5JAcGOKIzHDqBMs/hdemwisj4EeGLMXxCm9h8YgoCwIvndnuN1NdZxT4pdsesLXSaKaA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <!-- nav-3 when responsive -->
+        <div class="list-menu-res">
+            <ul class="nav-ul d-block list-unstyled">
+                <li><a href="">Trang chủ</a></li>
+                <li class="has-children">
+                    <a class="link-pro"><span>Sản phẩm <i class="fas fa-caret-right"></i></span></a>
+                </li>
+                <li><a href=" ">Giới thiệu</a></li>
+                <li><a href=" ">Blogs</a></li>
+                <li><a href=" ">Liên hệ</a></li>
+            </ul>
+            <ul class="menu-child-1" role="menu">
+                <li class="btn-turn-pro">
+                    <a>SẢN PHẨM</a>
+                </li>
+                <li class="btn-come-back">
+                    <a><i class="fas fa-caret-left pe-2"></i><span>Quay Lại</span></a>
+                </li>
+                <li class="list-menu">
+                    <a href="" title="Sách Văn học" class="has-submenu submenu-1 d-flex justify-content-between">Sách Văn học<i class="fas fa-caret-right"></i></a>
+                    <!-- <ul class="menu3 menu3-1  sm-nowrap">
+                        <li>
+                            <a href="" title="Văn học Việt Nam ">Văn học Việt Nam</a>
+                        </li>
+                        <li>
+                            <a href=" " title="Văn học Nước ngoài ">Văn học Nước ngoài</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị ">Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình ">Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Tiểu Thuyết - Truyện Dài ">Tiểu Thuyết - Truyện Dài</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Tiểu sử - Hồi ký - Du ký ">Tiểu sử - Hồi ký - Du ký</a>
+                        </li>
+                        <li>
+                            <a href="" title="Sách Kinh Điển ">Sách Kinh Điển</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="list-menu">
+                    <a href=" " title="Sách Kỹ năng " class="has-submenu d-flex justify-content-between">Sách Kỹ năng<i class="fas fa-caret-right"></i></span></a>
+                    <!-- <ul class="menu3 menu3-2 sm-nowrap">
+                        <li>
+                            <a href="" title="Sách Kỹ Năng Trong GIa Đình ">Sách Kỹ Năng Trong GIa Đình</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Sách Kỹ Năng Trong Cuộc Sống - Làm Việc ">Sách Kỹ Năng Trong Cuộc Sống - Làm Việc</a>
+                        </li>
+
+                        <li>
+                            <a href="" title="Sách Tuổi Mới Lớn ">Sách Tuổi Mới Lớn</a>
+                        </li>
+
+                    </ul> -->
+
+                </li>
+                <li>
+                    <a href="" title="Sách Thiếu nhi ">Sách Thiếu nhi</a>
+                </li>
+                <li>
+                    <a href="" title="Sách Kinh doanh ">Sách Kinh doanh</a>
+                </li>
+                <li class="list-menu">
+                    <a href="" title="Sách Tham khảo " class="has-submenu d-flex justify-content-between">Sách Tham khảo<i class="fas fa-caret-right"></i></span></a>
+                    <!-- <ul class="menu3 menu3-3">
+                        <li>
+                            <a href="" title="Sách Kiến Thức ">Sách Kiến Thức</a>
+                        </li>
+                        <li>
+                            <a href="" title="Sách Ngoại Ngữ ">Sách Ngoại Ngữ</a>
+                        </li>
+                        <li>
+                            <a href="" title="Sách Giáo Dục - Học Tập ">Sách Giáo Dục - Học Tập</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="" title="Truyện tranh ">Truyện tranh</a>
+
+                </li>
+                <li>
+                    <a href="" title="Văn phòng phẩm ">Văn phòng phẩm</a>
+
+                </li>
+                <li>
+                    <a href="" title="Combo ">Combo</a>
+
+                </li>
+                <li>
+                    <a href="" title="Sách Công Nghệ và Tin học ">Sách Công Nghệ và Tin học</a>
+                </li>
+                <li>
+                    <a href="" title="Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý ">Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý</a>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="content-main">
+            <div class="black-bag">
+            </div>
+            <header>
+                <div class="site-topbar">
+                    <div class="topbar-containner d-none d-lg-flex justify-content-between">
+                        <p>Tri thức là sức mạnh</p>
+                        <div class="lnk-action d-flex">
+                            <a href=""><span>Đăng ký</span></a>
+                            <a href=""><span>Đăng Nhập</span></a>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <p><i class="fas fa-shopping-cart"></i> <span>Giỏ hàng : </span><span class="ajax-cart-quantity">0</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                        nav mobile and tablet -->
+                    <div class="nav-repon-bar justify-content-between d-lg-none d-flex">
+                        <button class="btn-nav-mobile"><i class="bi bi-list"></i></button>
+                        <div class="mobile-menu-icon d-flex">
+                            <a href="">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <button class="btn-mobile-search">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            <div class="cart">
+                                <a href="">
+                                    <p><i class="fas fa-shopping-cart"></i> <span>Giỏ hàng : </span><span class="ajax-cart-quantity">0</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu and logo -->
+                <div class="site-botbar d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="">
+                            <img src="https://theme.hstatic.net/200000290933/1000682082/14/logo.png?v=116" alt="Nhà sách Trí Đức">
+                        </a>
+                    </div>
+                    <div class="navbar">
+                        <div class="nav-list">
+                            <ul class="nav-ul d-flex list-unstyled">
+                                <li><a href="/homepage.html">Trang chủ</a></li>
+                                <li>
+                                    <a href="" class="link-pro"><span>Sản phẩm <i  class="fas fa-sort-down" type="button"></i></span></a>
+                                    <ul class="menu-parent" role="menu">
+                                        <li class="list-menu">
+                                            <a href="" title="Sách Văn học" class="has-submenu submenu-1">Sách Văn học<i class="fas fa-caret-right"></i></a>
+                                            <ul class="menu3 menu3-1 sm-nowrap">
+                                                <li>
+                                                    <a href="" title="Văn học Việt Nam ">Văn học Việt Nam</a>
+                                                </li>
+                                                <li>
+                                                    <a href=" " title="Văn học Nước ngoài ">Văn học Nước ngoài</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị ">Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình ">Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Tiểu Thuyết - Truyện Dài ">Tiểu Thuyết - Truyện Dài</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Tiểu sử - Hồi ký - Du ký ">Tiểu sử - Hồi ký - Du ký</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="Sách Kinh Điển ">Sách Kinh Điển</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-menu">
+                                            <a href=" " title="Sách Kỹ năng " class="has-submenu">Sách Kỹ năng<i class="fas fa-caret-right"></i></span></a>
+                                            <ul class="menu3 menu3-2 sm-nowrap">
+                                                <li>
+                                                    <a href="" title="Sách Kỹ Năng Trong GIa Đình ">Sách Kỹ Năng Trong GIa Đình</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Sách Kỹ Năng Trong Cuộc Sống - Làm Việc ">Sách Kỹ Năng Trong Cuộc Sống - Làm Việc</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="" title="Sách Tuổi Mới Lớn ">Sách Tuổi Mới Lớn</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="" title="Sách Thiếu nhi ">Sách Thiếu nhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Sách Kinh doanh ">Sách Kinh doanh</a>
+                                        </li>
+                                        <li class="list-menu">
+                                            <a href="" title="Sách Tham khảo " class="has-submenu">Sách Tham khảo<i class="fas fa-caret-right"></i></span></a>
+                                            <ul class="menu3 menu3-3 ps-0">
+                                                <li>
+                                                    <a href="" title="Sách Kiến Thức ">Sách Kiến Thức</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="Sách Ngoại Ngữ ">Sách Ngoại Ngữ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="Sách Giáo Dục - Học Tập ">Sách Giáo Dục - Học Tập</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Truyện tranh ">Truyện tranh</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="" title="Văn phòng phẩm ">Văn phòng phẩm</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="" title="Combo ">Combo</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="" title="Sách Công Nghệ và Tin học ">Sách Công Nghệ và Tin học</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý ">Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý</a>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href=" ">Giới thiệu</a></li>
+                                <li><a href=" ">Blogs</a></li>
+                                <li><a href=" ">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-inp ">
+                            <input type="text " placeholder="Tìm kiếm... ">
+                            <button><i class="fas fa-search "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- show menu when responsiving-->
+            </header>
+            <div class="site-main category-product-show">
+                <div class="main">
+                    <div class="category-respon">
+                        <div class="name-category d-flex justify-content-between">
+                            <span>DANH MỤC</span>
+                            <button class="btn-show-category"><i class="bi bi-list-stars"></i></button>
+                        </div>
+                        <div class="respon-ul">
+                            <ul class="list-unstyled">
+                                <li><a href=" "><span><i class="fas fa-star"></i>Sách văn học</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Sách kỹ năng</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Sách Thiếu Nhi</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Combo</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Sách Tham khảo</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Truyện Tranh</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Văn Phòng Phẩm</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Tin Tức-Sự Kiện</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Giới thiệu</span></a></li>
+                                <li><a href=" "><span><i class="fas fa-star"></i>Liên hệ</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- dẫn trang -->
+                <div class="link-page">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="list-group">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-lg-3 sidebars cate-left">
+                                <ul class="nav-ul d-block list-unstyled">
+                                    <li><a href="">Trang chủ</a></li>
+                                    <!-- bỏ href -->
+                                    <li>
+                                        <a id="c1" key="P1"><span>Sản phẩm <i id="target" class="fas fa-sort-down"></i></span></a>
+                                        <ul role="menu" class="p-0 sm-nowrap-parent">
+                                            <li class="list-menu">
+                                                <a id="cc1" title="Sách Văn học" class="has-submenu submenu-1">Sách Văn học<i class="fas fa-sort-down" id="show-chid-1"></i></a>
+                                                <ul class="sm-nowrap p-0 wrap-show-chid-1">
+                                                    <li>
+                                                        <a href="" title="Văn học Việt Nam ">Văn học Việt Nam</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href=" " title="Văn học Nước ngoài ">Văn học Nước ngoài</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="" title="Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị ">Truyện Giả tưởng - Huyền Bí - Phiêu Lưu - Kinh Dị</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="" title="Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình ">Truyện ngắn - Tản văn - Tạp Văn - Ngôn Tình</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="" title="Tiểu Thuyết - Truyện Dài ">Tiểu Thuyết - Truyện Dài</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="" title="Tiểu sử - Hồi ký - Du ký ">Tiểu sử - Hồi ký - Du ký</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" title="Sách Kinh Điển ">Sách Kinh Điển</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-menu">
+                                                <a id="" title="Sách Kỹ năng " class="has-submenu">Sách Kỹ năng<i class="fas fa-sort-down" id="show-chid-2"></i></span></a>
+                                                <ul class="sm-nowrap p-0  wrap-show-chid-2">
+                                                    <li>
+                                                        <a id="" title="Sách Kỹ Năng Trong GIa Đình ">Sách Kỹ Năng Trong GIa Đình</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a id="" title="Sách Kỹ Năng Trong Cuộc Sống - Làm Việc ">Sách Kỹ Năng Trong Cuộc Sống - Làm Việc</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a id="" title="Sách Tuổi Mới Lớn ">Sách Tuổi Mới Lớn</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </li>
+                                            <li>
+                                                <a id="" title="Sách Thiếu nhi ">Sách Thiếu nhi</a>
+                                            </li>
+                                            <li>
+                                                <a id="" title="Sách Kinh doanh ">Sách Kinh doanh</a>
+                                            </li>
+                                            <li class="list-menu">
+                                                <a id="" title="Sách Tham khảo " class="has-submenu">Sách Tham khảo<i class="fas fa-sort-down" id="show-chid-3"></i></span></a>
+                                                <ul class="sm-nowrap p-0  wrap-show-chid-3">
+                                                    <li>
+                                                        <a id="" title="Sách Kiến Thức ">Sách Kiến Thức</a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="" title="Sách Ngoại Ngữ ">Sách Ngoại Ngữ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="" title="Sách Giáo Dục - Học Tập ">Sách Giáo Dục - Học Tập</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a id="" title="Truyện tranh ">Truyện tranh</a>
+                                            </li>
+                                            <li>
+                                                <a id="" title="Văn phòng phẩm ">Văn phòng phẩm</a>
+
+                                            </li>
+                                            <li>
+                                                <a id="" title="Combo ">Combo</a>
+
+                                            </li>
+                                            <li>
+                                                <a id="" title="Sách Công Nghệ và Tin học ">Sách Công Nghệ và Tin học</a>
+                                            </li>
+                                            <li>
+                                                <a id="" title="Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý ">Sách Chính Trị - Lịch Sử - Văn Hóa - Địa Lý</a>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href=" ">Giới thiệu</a></li>
+                                    <li><a href=" ">Blogs</a></li>
+                                    <li><a href=" ">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="intruct-pro d-flex justify-content-between align-items-center">
+                                    <h5>Tất cả sản phẩm</h5>
+                                    <div class="d-flex sorted-by align-items-center">
+                                        <span>Sắp xếp theo:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected value="">Tên : A-Z</option>
+                                            <option value="1">Cũ nhất</option>
+                                            <option value="2">Mới nhất</option>
+                                            <option value="3">Bán chạy nhất</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="lst-another-pros">
+                                    <div class="container-fluid p-0">
+                                        <div class="row list-highlight-pro gx-3" id="pro-auth">
+                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 mb-3 h-auto">
+                                                <div class="item-sell" id="sp02">
+                                                    <p class="d-flex justify-content-center "><span class="discount ">-10%</span></p>
+                                                    <div class="btn-custom-action d-flex justify-content-between ">
+                                                        <button class="btn-quick-view" onclick="viewModel('sp02')"><i class="far fa-chart-bar "></i><span>Xem nhanh</span></button>
+                                                        <button class="btn-cart d-flex" onclick="setCart('sp02')"><span>+ Thêm vào giỏ</span><i class="bi bi-cart3 ps-1 "></i></button>
+                                                    </div>
+                                                    <div class="img-hot-book ">
+                                                        <a href="">
+                                                            <img id="pro-image-sp02" src="https://product.hstatic.net/200000290933/product/77c700535cfa13f8a7d7012f00e01257_d94acd7e8b0540d291d397e58ce818e6_large.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pro-infor ">
+                                                        <a href=" " title="BỘ SÁCH KỸ NĂNG SỐNG DÀNH CHO TRẺ - MÌNH KHÔNG ĐỂ MẸ PHẢI LO LẮNG " class="pro-name ">
+                                                            <p id="pro-name-sp02">BỘ SÁCH KỸ NĂNG SỐNG DÀNH CHO TRẺ - MÌNH KHÔNG ĐỂ MẸ PHẢI LO LẮNG</p>
+                                                        </a>
+                                                        <p class="price d-flex justify-content-center ">
+                                                            <span class="sold-price"><span id="salprice-pro-sp02">61,200</span><ins>đ</ins></span>
+                                                            <del class="initial-price"><span id="initial-price-sp02">68,000</span><span>đ</span></del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 mb-3 h-auto">
+                                                <div class="item-sell" id="sp02">
+                                                    <p class="d-flex justify-content-center "><span class="discount ">-10%</span></p>
+                                                    <div class="btn-custom-action d-flex justify-content-between ">
+                                                        <button class="btn-quick-view" onclick="viewModel('sp02')"><i class="far fa-chart-bar "></i><span>Xem nhanh</span></button>
+                                                        <button class="btn-cart d-flex" onclick="setCart('sp02')"><span>+ Thêm vào giỏ</span><i class="bi bi-cart3 ps-1 "></i></button>
+                                                    </div>
+                                                    <div class="img-hot-book ">
+                                                        <a href="">
+                                                            <img id="pro-image-sp02" src="https://product.hstatic.net/200000290933/product/77c700535cfa13f8a7d7012f00e01257_d94acd7e8b0540d291d397e58ce818e6_large.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pro-infor ">
+                                                        <a href=" " title="BỘ SÁCH KỸ NĂNG SỐNG DÀNH CHO TRẺ - MÌNH KHÔNG ĐỂ MẸ PHẢI LO LẮNG " class="pro-name ">
+                                                            <p id="pro-name-sp02">BỘ SÁCH KỸ NĂNG SỐNG DÀNH CHO TRẺ - MÌNH KHÔNG ĐỂ MẸ PHẢI LO LẮNG</p>
+                                                        </a>
+                                                        <p class="price d-flex justify-content-center ">
+                                                            <span class="sold-price"><span id="salprice-pro-sp02">61,200</span><ins>đ</ins></span>
+                                                            <del class="initial-price"><span id="initial-price-sp02">68,000</span><span>đ</span></del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Xem nhanh sản phẩm -->
+                <div class="ban-quick-view">
+                    <div class="mode-view">
+                        <div class="overlay">
+                        </div>
+                        <div class="quick-view-pro" data="">
+                            <div class="d-flex justify-content-between p-3 title-pro">
+                                <h5>COMBO PHÁT TRIỂN TOÀN DIỆN - BỘ SÁCH 5 CUỐN KỸ NĂNG SỐNG DÀNH CHO TRẺ</h5>
+                                <button class="close-quick-view"><i class="fas fa-times-circle"></i></button>
+                            </div>
+                            <div class="container-fluid view-info">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="quick-view-img">
+                                            <img src="https://product.hstatic.net/200000290933/product/nhat-dinh-thanh-cong_8fef3134c9ee40b6aa2c1d31252d1e36.jpg" alt="">
+                                        </div>
+                                        <!-- <div class="row img-child-view">
+                                            <div class="col-4"><img src="https://product.hstatic.net/200000290933/product/nhat-dinh-thanh-cong_8fef3134c9ee40b6aa2c1d31252d1e36.jpg" alt=""></div>
+                                        </div> -->
+                                    </div>
+                                    <div class="col-lg-6 pt-5">
+                                        <div class="quick-price">
+                                            <span class="quick-sold-price"><span class="sprice">90,000</span><span>đ</span></span>
+                                            <del class="quick-initial-price"><span class="iprice">68.000</span><span>đ</span></del>
+                                        </div>
+                                        <label class="number-name">Số lượng</label>
+                                        <div class="number-value">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                        <div>
+                                            <button class="btn-add-cart" onclick="addCartView()"><i class="fas fa-cart-plus"></i>THÊM VÀO GIỎ</button>
+                                            <span class="ps-2">hoặc</span>
+                                            <a href="" style="text-decoration: none; color: #E05543;font-weight: bold;">Xem chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="site-footer ">
+                    <div class="container-fluid p-0 ">
+                        <div class="row footer-icon ">
+                            <div class="col-lg-3 ">
+                                <div class="ps-2 ">
+                                    <div class="ship-pro ">
+                                        <i class="fas fa-truck "></i>
+                                        <span>Giao hàng nhanh chóng</span>
+                                    </div>
+                                    <div>
+                                        <span>Nhận hàng tận tay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="ps-2 ">
+                                    <div class="ship-pro ">
+                                        <i class="fas fa-cog "></i>
+                                        <span>Miễn phí đổi trả hàng</span>
+                                    </div>
+                                    <div>
+                                        <span>Trong vòng 7 ngày</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="ps-2 ">
+                                    <div class="phone ">
+                                        <i class="fas fa-phone-alt "></i>
+                                        <span>Đặt hàng trực tuyến</span>
+                                    </div>
+                                    <div>
+                                        <span>SĐT: 024.6672.5121</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="ps-2 ">
+                                    <div class="working-time ">
+                                        <i class="far fa-clock "></i>
+                                        <span>Làm viêc các ngày trong tuần</span>
+                                    </div>
+                                    <div>
+                                        <span>Thứ 2 - CN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contact-store ">
+                            <div class="col-lg-2 ">
+                                <h5>Liên Kết</h5>
+                                <ul>
+                                    <li><a href=" "><span>Sản phẩm khuyến mãi</span></a></li>
+                                    <li><a href=" "><span>Sản phẩm nổi bật</span></a></li>
+                                    <li><a href=" "><span>Tất cả sản phẩm</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <h5>Hỗ trợ</h5>
+                                <ul>
+                                    <li><a href=" "><span>Trang chủ</span></a></li>
+                                    <li><a href=" "><span>Sản phẩm</span></a></li>
+                                    <li><a href=" "><span>Giới thiệu</span></a></li>
+                                    <li><a href=" "><span>Blogs</span></a></li>
+                                    <li><a href=" "><span>Liên hệ</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <h5>Dịch vụ</h5>
+                                <ul>
+                                    <li><a href=" "><span>Tìm kiếm</span></a></li>
+                                    <li><a href=" "><span>Giới thiệu</span></a></li>
+                                    <li><a href=" "><span>Chính sách đổi trả</span></a></li>
+                                    <li><a href=" "><span>Chính sách bảo mật</span></a></li>
+                                    <li><a href=" "><span>Điều khoản dịch vụ</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 connect-us mb-sm-2">
+                                <h5>Kết nối với chúng tôi</h5>
+                                <div class="fan-page "><iframe name="f3f38c06b9d9078 " width="1000px " height="300px " data-testid="fb:page Facebook Social Plugin " title="fb:page Facebook Social Plugin " frameborder="0 " allowtransparency="true
+                                                            " allowfullscreen="true " scrolling="no " allow="encrypted-media " src="https://www.facebook.com/v10.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f7e3fd0644914%26domain%3Dnhasachtriduc.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnhasachtriduc.vn%252Ff3db12621977db4%26relation%3Dparent.parent&amp;container_width=277&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftriducbookstore&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false "
+                                        style="border: none; visibility: visible; width: 320px; height: 130px; " class=" "></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 info-store ">
+                                <h4>024.6672.5121</h4>
+                                <span>Thứ 2 - Chủ Nhật: 8:00- 22:00</span>
+                                <span class="address pt-3 pb-2 "><i class="fas fa-map-marker-alt "></i> 524 Đường Láng, Đống Đa, Hà Nội</span>
+                                <span class="gmail pb-4 "><i class="far fa-envelope "></i> Triducbooks@gmail.com</span>
+                                <a href=" " class="connect-fb ">
+                                    <i class="fab fa-facebook "></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-info pt-4 pb-4 ">
+                    <div class="link-copy ">
+                        <a href=" ">Tìm kiếm</a><span> | </span>
+                        <a href=" ">Giới thiệu</a><span> | </span>
+                        <a href=" ">Chính sách đổi trả</a><span> | </span>
+                        <a href=" ">Chính sách bảo mật</a><span> | </span>
+                        <a href=" ">Điều khoản dịch vụ</a>
+                    </div>
+                    <div class="cp-right ">
+                        <span>Copyright © 2021 Nhà Sách Trí Đức.</span>
+                        <span class="powered ">Powered by Haravan.</span>
+                    </div>
+                    <a href=" " class="message ">
+                        <svg width="60px " height="60px " viewBox="0 0 60 60 " cursor="pointer "><svg x="0 " y="0 " width="60px " height="60px "><g stroke="none " stroke-width="1 " fill="none " fill-rule="evenodd "><g><circle fill="#44bec7 " cx="30 " cy="30
+                                                            " r="30 "></circle><svg x="10 " y="10 "><g transform="translate(0.000000, -10.000000) " fill="#FFFFFF "><g id="logo " transform="translate(0.000000, 10.000000) "><path d="M20,0 C31.2666,0 40,8.2528 40,19.4 C40,30.5472
+                                                            31.2666,38.8 20,38.8 C17.9763,38.8 16.0348,38.5327 14.2106,38.0311 C13.856,37.9335 13.4789,37.9612 13.1424,38.1098 L9.1727,39.8621 C8.1343,40.3205 6.9621,39.5819 6.9273,38.4474 L6.8184,34.8894 C6.805,34.4513
+                                                            6.6078,34.0414 6.2811,33.7492 C2.3896,30.2691 0,25.2307 0,19.4 C0,8.2528 8.7334,0 20,0 Z M7.99009,25.07344 C7.42629,25.96794 8.52579,26.97594 9.36809,26.33674 L15.67879,21.54734 C16.10569,21.22334 16.69559,21.22164
+                                                            17.12429,21.54314 L21.79709,25.04774 C23.19919,26.09944 25.20039,25.73014 26.13499,24.24744 L32.00999,14.92654 C32.57369,14.03204 31.47419,13.02404 30.63189,13.66324 L24.32119,18.45264 C23.89429,18.77664 23.30439,18.77834
+                                                            22.87569,18.45674 L18.20299,14.95224 C16.80079,13.90064 14.79959,14.26984 13.86509,15.75264 L7.99009,25.07344 Z "></path></g></g></svg></g>
+                        </g>
+                        </svg>
+                        </svg>
+                    </a>
+                    <button class="btn-up "> 
+                            <i class="fas fa-chevron-up "></i>
+                        </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.js" integrity="sha512-h1Xtd9Xz5HglyzafV0MQ2j9RU30SbD+QdVRJXxdIdMixcGLiljJqtuu1W8Ig20IzYI8lskIKEppDJbF/zkdRtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js" integrity="sha512-1zzZ0ynR2KXnFskJ1C2s+7TIEewmkB2y+5o/+ahF7mwNj9n3PnzARpqalvtjSbUETwx6yuxP5AJXZCpnjEJkQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/JS/home.js"></script>
+    <script src="/JS//product.js"></script>
+</body>
+
+</html>
