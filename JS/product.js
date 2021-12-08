@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    var str = "http://localhost:8811/BookStore/all/4"
+    var pos = str.indexOf('all/');
+    val = str.slice(pos + 4);
+    console.log(val)
     var slide = 0;
     $(".sidebars").find(".sm-nowrap-parent").hide();
     $(".sidebars .sm-nowrap").hide();
@@ -27,7 +31,7 @@ $(document).ready(function() {
 
     //phân trang //Dach sach san pham
     var url = "http://localhost:3000/listData";
-    var id = "sp09"
+    var id = "sp08"
     $(".cate-left a").click(function() {
         id = $(this).attr('id');
         key = $(this).attr('key');
@@ -37,6 +41,9 @@ $(document).ready(function() {
         $(".intruct-pro  h5").text(txt);
         page(url, id);
     })
+    val = $(".form-select").find(':selected').val();
+    console.log(val);
+    $('.lds-ring').hide();
 
     function page(url, id) {
         $.ajax({
@@ -48,7 +55,7 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data) {
                 exam(data);
-            }
+            },
         });
     }
     page(url, id);
@@ -73,29 +80,29 @@ $(document).ready(function() {
     function exam(data) {
         function template(data) {
             var html = data.map((item) => {
-                return `<div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 mb-3 h-auto">
-              <div class="item-sell" id=${item.id}>
-                      <p class="d-flex justify-content-center "><span class="discount ">-${item.sale}%</span></p>
-                      <div class="btn-custom-action d-flex justify-content-between ">
-                          <button class="btn-quick-view" onclick="viewModel('${item.id}')"><i class="far fa-chart-bar "></i><span>Xem nhanh</span></button>
-                          <button class="btn-cart d-flex" onclick="setCart('${item.id}')"><span>+ Thêm vào giỏ</span><i class="bi bi-cart3 ps-1 "></i></button>
-                      </div>
-                      <div class="img-hot-book ">
-                      <a href="http://localhost:3000/listData/${item.id}">
-                            <img id="pro-image-${item.id}" src=${item.src} alt="">
-                        </a>
-                      </div>
-                      <div class="pro-infor ">
-                          <a href="http://localhost:3000/listData/${item.id}" title="${item.name}" class="pro-name ">
-                              <p id="pro-name-${item.id}">${item.name}</p>
-                          </a>
-                          <p class="price d-flex justify-content-center ">
-                              <span class="sold-price"><span id="salprice-pro-${item.id}">${item.bPrice}</span><ins>đ</ins></span>
-                              <del class="initial-price"><span id="initial-price-${item.id}">${item.aPrice}</span><span>đ</span></del>
-                          </p>
-                      </div>
-              </div>
-      </div>`;
+                return `<div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 mb-3 h-auto pro-col">
+                            <div class="item-sell" id=${item.id}>
+                                    <p class="d-flex justify-content-center "><span class="discount ">-${item.sale}%</span></p>
+                                    <div class="btn-custom-action d-flex justify-content-between ">
+                                        <button class="btn-quick-view" onclick="viewModel('${item.id}')"><i class="far fa-chart-bar "></i><span>Xem nhanh</span></button>
+                                        <button class="btn-cart d-flex" onclick="setCart('${item.id}')"><span>+ Thêm vào giỏ</span><i class="bi bi-cart3 ps-1 "></i></button>
+                                    </div>
+                                    <div class="img-hot-book ">
+                                    <a href="http://localhost:3000/listData/${item.id}">
+                                            <img id="pro-image-${item.id}" src=${item.src} alt="">
+                                        </a>
+                                    </div>
+                                    <div class="pro-infor ">
+                                        <a href="http://localhost:3000/listData/${item.id}" title="${item.name}" class="pro-name ">
+                                            <p id="pro-name-${item.id}">${item.name}</p>
+                                        </a>
+                                        <p class="price d-flex justify-content-center ">
+                                            <span class="sold-price"><span id="salprice-pro-${item.id}">${item.bPrice}</span><ins>đ</ins></span>
+                                            <del class="initial-price"><span id="initial-price-${item.id}">${item.aPrice}</span><span>đ</span></del>
+                                        </p>
+                                    </div>
+                            </div>
+                    </div>`;
             });
             return html;
         }
@@ -111,4 +118,12 @@ $(document).ready(function() {
             },
         });
     }
+    // let arr = [];
+    // $(".list-menu").each((index, value) => {
+    //     a = $(value).find("i.fas").attr("id");
+    //     (a == undefined) ? a: arr.push(a);
+    // })
+    // arr.forEach(item => {
+    //     $("#" + item).hide();
+    // })
 });

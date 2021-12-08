@@ -11,10 +11,7 @@ $(".banner").slick({
     nextArrow: '<button class="slick-next slick-arrow " aria-label="Next " type="button " style=" "><i class="bi bi-chevron-right "></i></button>',
 });
 
-$(".ls-new-pro").slick({
-    prevArrow: '<button class="slick-prev slick-arrow " aria-label="Previous " type="button " style=" "><i class="bi bi-chevron-left "></i></button>',
-    nextArrow: '<button class="slick-next slick-arrow " aria-label="Next " type="button " style=" "><i class="bi bi-chevron-right "></i></button>',
-});
+
 
 function hideClass(name, show, hide) {
     $(name).removeClass(show);
@@ -48,9 +45,11 @@ backToTop();
 function qucikView() {
     $(".close-quick-view").on("click", function() {
         hide();
+        $(".number-value").children("input").val(1);
     });
     $(".overlay").on("click", function() {
         hide();
+        $(".number-value").children("input").val(1);
     });
 
     function hide() {
@@ -70,7 +69,7 @@ function viewModel(id) {
     $(".title-pro").children("h5").text(pName);
     $(".quick-sold-price .sprice").text(sPrice);
     $(".quick-initial-price .iprice").text(iPrice);
-
+    $('#link-detail-pro').attr("href", "1");
     showClass(".overlay", "show-overlay", "close-overlay");
     showClass(".quick-view-pro", "show-qview", "hide-qview ");
     showClass(".ban-quick-view", "show-ban-qview", "hide-ban-qview");
